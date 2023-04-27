@@ -1,0 +1,235 @@
+
+.container {
+    width: 100%;
+    height: auto;
+}
+.menu {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(255, 186, 0);
+}
+
+.up {
+    width: 80%;
+    height: 70px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.up ul {
+    list-style: none; /*thuộc tính xóa dấu chấm ở thẻ ul li*/
+    margin-top: 0px;
+}
+
+.up ul li {
+    display: inline-block; /*nằm trên cùng 1 dòng* (có thể dùng inline-table)*/
+}
+
+.up ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+.up ul li a img {
+    vertical-align: middle;
+}
+
+.down {
+    vertical-align: middle;
+}
+
+.down input {
+    width: 500px;
+    padding-top: 15px;
+    border-radius: 5px;
+    margin-left: 230px;
+    text-indent: 10px;
+    font-size: 20px;
+}
+
+.down button {
+    border-radius: 5px;
+}
+
+.down button img {
+    width: 30px;
+    height: auto;
+}
+
+.img1 {
+    padding-top: 10px;
+    height: 350px;
+}
+
+/*chuyển ảnh*/
+.slides {
+    padding: 0;
+    width: 700px;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 700px;
+    height: 350px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/*.nav label {*/
+/*    width: 200px;*/
+/*    height: 100%;*/
+/*    display: none;*/
+/*    position: absolute;*/
+
+/*    opacity: 0;*/
+/*    z-index: 9;*/
+/*    cursor: pointer;*/
+
+/*    transition: opacity .2s;*/
+
+/*    color: #FFF;*/
+/*    font-size: 156pt;*/
+/*    text-align: center;*/
+/*    line-height: 380px;*/
+/*    font-family: "Varela Round", sans-serif;*/
+/*    background-color: rgba(255, 255, 255, .3);*/
+/*    text-shadow: 0px 0px 15px rgb(119, 119, 119);*/
+/*}*/
+
+.slide:hover + .nav label {
+    opacity: 0.5;
+}
+
+.nav label:hover {
+    opacity: 1;
+}
+
+.nav .next {
+    right: 0;
+}
+
+input:checked + .slide-container .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label {
+    display: block;
+}
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    left: 0px;
+    top: -20px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*ket thúc chuyển ảnh*/
+
+
+/*tìm kiếm xe*/
+.but {
+    margin-left: 500px;
+}
+
+.but input {
+    width: 300px;
+    height: 25px;
+}
+
+.but button {
+    height: 30px;
+    width: 80px;
+}
+/* xe đề mô*/
+.carmodel {
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    margin-bottom: 100px;
+}
+/*xe mẫu*/
+.item img {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+/*bắt đầu phần cuối*/
+
+.sp{
+    background-color: coral;
+}
+.sp table {
+    border-collapse: collapse;
+    text-align: center;
+    border-spacing: 10px;
+}
+/* dùng cho thẻ table*/
+.sanPham thead th {
+    border: solid 1px
+}
+.sanPham tbody td{
+    border: solid 1px;
+}

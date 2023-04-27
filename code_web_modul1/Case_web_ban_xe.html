@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Moto thể tao</title>
+    <link rel="stylesheet" href="cssDKvsDN/style.css">
+    <script src="jsDkvsDN/JavaScript.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <div class="up">
+            <ul>
+                <li>
+                    <a href="https://www.chotot.com/">
+                        <img src="image/logo.PNG">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="image/icon1.PNG">
+                        Trang chủ
+                    </a>
+                </li>
+                <li>
+                    <a href="pag2.html">
+                        <img src="image/icon2.PNG">
+                        Tôi bán
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/long2299">
+                        <img src="image/icon3.PNG">
+                        Chat
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="image/icon4.PNG">
+                        Thông báo
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="image/icon5.PNG">
+                        Thêm
+                    </a>
+                </li>
+                <li>
+                    <a href="dangnhap.html">
+                        <img src="">
+                        Đăng nhập/
+                    </a>
+                    <a href="dangky.html">
+                        Đăng ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="down">
+            <input type="text" placeholder="Tìm kiếm trên chợ tốt">
+            <button>
+                <img src="image/search.png">
+            </button>
+        </div>
+    </div>
+    <div class="img1">
+        <ul class="slides">
+            <input type="radio" name="radio-btn" id="img-1" checked/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="image/imgxe8.jpg"/>
+                </div>
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-2"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="image/imgxe6.jpg"/>
+                </div>
+
+            </li>
+            -->
+
+            <input type="radio" name="radio-btn" id="img-3"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="image/imgxe9.jpg"/>
+                </div>
+
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-4"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="image/imgxe5.jpg"/>
+                </div>
+
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-5"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="image/imgxe2.jpg"/>
+                </div>
+
+            </li>
+
+            <input type="radio" name="radio-btn" id="img-6"/>
+            <li class="slide-container">
+                <div class="slide">
+                    <img src="image/imgxe4.jpg"/>
+                </div>
+
+            </li>
+            <li class="nav-dots">
+                <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+            </li>
+        </ul>
+    </div>
+    <div class="carmodel">
+        <div class="item">
+            <a href="https://yamaha-motor.com.vn/xe/yzf-r3-b5lw/">
+                <img src="./xedangban/yaR3.jpg">
+                <br>
+                Yamaha YZF-R3
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://yamaha-motor.com.vn/xe/exciter-155-vva-phien-ban-tieu-chuan-mau-moi/">
+                <img src="./xedangban/ex155.jpg">
+                <br>
+                Exciter 155
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://yamaha-motor.com.vn/xe/sirius-phanh-dia-mau-moi/">
+                <img src="./xedangban/sirius.jpg">
+                <br>
+                Sirius
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.honda.com.vn/xe-may/san-pham/cbr150r">
+                <img src="./xedangban/CBR150.jpg">
+                CBR150
+            </a>
+        </div>
+        <div class="item">
+            <a href="https://www.honda.com.vn/xe-may/san-pham/rebel-500-2023">
+                <img src="./xedangban/honda.jpg">
+                <br>
+                Rebel 500 2023 xe siêu lướt
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="./xedangban/lead.jpg">
+                <br>
+                Anh có thể làm quả ninja Lead
+            </a>
+        </div>
+    </div>
+    <div class="sp">
+        <div class="but">
+            <div>
+                <h2>Xe đang bán</h2>
+            </div>
+            <div>
+                <input type="text" id="productId" placeholder="Nhập mã vào đây để tìm xe">
+                <button onclick="timxe()">Tìm kiếm</button>
+                <br>
+                <br>
+                <button onclick="findProductById()" style="width: 150px; height: 35px; border-radius: 5px ">Ấn để hiển
+                    thị xe
+                </button>
+            </div>
+        </div>
+        <table style="margin-left: 500px; margin-top: 30px; width: 300px;height: 300px" id="productTable"
+               class="sanPham">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên xe</th>
+                <th>Mã xe</th>
+                <th>Ảnh xe</th>
+                <th>Giá bán</th>
+            </tr>
+            </thead>
+            <tbody id="nd">
+
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
